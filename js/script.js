@@ -70,3 +70,33 @@ const handlesubmit = () => {
 
   }
 }
+
+// -------------------------------third person 
+
+
+const handlePlayer3 = () => {
+  if (!playerthreeinput.value) {
+    err.innerHTML = 'Please enter your value';
+  } else if (playerthreeinput.value < 0 || playerthreeinput.value > 10) {
+    err.innerHTML = 'Enter a value under 10';
+  } else if (playroneinput.value == playerthreeinput.value) {
+    winnewr.style = 'display:block';
+    h1.innerHTML = 'Winner Player 3';
+    player3.style = 'display:none';
+    h2.style = 'display:none';
+    playernumber.style = 'display:none';
+    main_Box.style = 'display:none';
+  } else {
+    chancenumbe2++; 
+    chance2.innerHTML = chancenumbe2;
+
+    if (chancenumbe2 == 5) {
+      winnewr.style = 'display:block';
+      h1.innerHTML = 'Winner Player 1';  // Player 3 ব্যর্থ হলে Player 1 জয়ী
+      player3.style = 'display:none';
+      h2.style = 'display:none';
+      playernumber.style = 'display:none';
+      main_Box.style = 'display:none';
+    }
+  }
+};
