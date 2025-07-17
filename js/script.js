@@ -92,7 +92,7 @@ const handlePlayer3 = () => {
 
     if (chancenumbe2 == 5) {
       winnewr.style = 'display:block';
-      h1.innerHTML = 'Winner Player 1';  // Player 3 ব্যর্থ হলে Player 1 জয়ী
+      h1.innerHTML = 'Winner Player 1';
       player3.style = 'display:none';
       h2.style = 'display:none';
       playernumber.style = 'display:none';
