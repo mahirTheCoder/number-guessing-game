@@ -7,69 +7,44 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div class="show">
+      <h2 class="playernumber">player 1</h2>
+      <p class="err"></p>
+    </div>
 
+    <div class="main_Box">
+      <div class="player1">
+        <input class="playrone" type="number" placeholder="Enter Your value" />
+        <button onclick="handlebutton()">Go</button>
+      </div>
+      <div class="player2">
+        <h3 style="text-align: right; margin-bottom: 12px">
+          <span class="chance"></span>/5
+        </h3>
+        <input
+          class="playertwoinput"
+          type="number"
+          placeholder="Enter Your value"
+        />
+        <button onclick="handlesubmit()">Go</button>
+      </div>
+      <div class="player3">
+        <h3 style="text-align: right; margin-bottom: 12px">
+          <span class="chance2"></span>/5
+        </h3>
+        <input
+          class="playerthreeinput"
+          type="number"
+          placeholder="Enter Your value"
+        />
+        <button onclick="handlePlayer3()">Click</button>
+      </div>
+    </div>
 
-
-
-
-
-
-<div class="show">
-  <h2 class="playernumber">player 1</h2>
-  <p class="err"></p>
-</div>
-
-<div class="main_Box">
-  <div class="player1">
-    <input class="playrone" type="number" placeholder="Enter Your value">
-    <button onclick="handlebutton()">Go</button>
-  </div>
-  <div class="player2">
-    <h3 style="text-align: right; margin-bottom: 12px;"><span class="chance"></span>/5</h3>
-    <input class="playertwoinput" type="number" placeholder="Enter Your value">
-    <button onclick="handlesubmit()">Go</button>
-  </div>
-  <div class="player3">
-    <h3 style="text-align: right; margin-bottom: 12px;"><span class="chance2"></span>/5</h3>
-    <input class="playerthreeinput" type="number" placeholder="Enter Your value">
-    <button onclick="handlePlayer3()">Click</button>
-  </div>
-</div>
-
-
-<div class="winnewr">
-  <h1>winner</h1>
-  <img src="images/winner2.gif" alt="winner">
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="winnewr">
+      <h1>winner</h1>
+      <img src="images/winner2.gif" alt="winner" />
+    </div>
 
     <script src="js/script.js"></script>
   </body>
