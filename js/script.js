@@ -37,3 +37,36 @@ const handlebutton = () => {
   }
 }
 
+// -------------------------------secound person 
+
+const handlesubmit = () => {
+  if (!playertwoinput.value) {
+    err.innerHTML = 'please enter your valueeee'
+
+  } else if (playertwoinput.value < 0 || playertwoinput.value > 10) {
+    err.innerHTML = ' 0 theke 10 '
+
+  } else if (playroneinput.value == playertwoinput.value) {
+
+
+    winnewr.style = 'display: block'
+    h1.innerHTML = 'Winner Player 2'
+    player2.style = 'display:none'
+    h2.style = 'display:none'
+    playernumber.style = 'display:none'
+    main_Box.style = 'display:none'
+
+  } else {
+    chancenumber++
+    chance.innerHTML = chancenumber
+    console.log(chancenumber)
+
+    if (chancenumber == 5) {
+      player2.style = 'display: none'
+      player3.style = 'display: block'
+      h2.innerHTML = 'player 3'
+
+    }
+
+  }
+}
